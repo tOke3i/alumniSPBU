@@ -3,17 +3,29 @@
 Написанный мною код HTML,Sass и JS для страниц:
 
 index.html
+
 business.html
+
 communities.html
+
 contacts.html
+
 docs.html
+
 donations.html
+
 events-detail.html
+
 events.html
+
 about.html
+
 offices.html
+
 partners.html
+
 patrons.html
+
 Установка: выполнить в папке проекта: npm i.
 
 Использование: npm start (дабы не ставить глобально 4-ю версию gulp).
