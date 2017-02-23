@@ -1,0 +1,148 @@
+.business-banner-wrapper{
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  background-repeat: no-repeat;
+
+  margin-bottom:35px;
+  @media(max-width:650px){
+    align-items:center;
+    padding-left:0;
+    margin-bottom: 100px !important;
+    min-height: 160px;
+  }
+  .business-banner-title{
+      width:100%;
+      position: absolute;
+      bottom:40px;
+      left:40px;
+      z-index: 1;
+    }
+  @media(max-width:600px){
+        display: none;
+  }
+}
+
+.main-business{
+  padding:0 35px 35px;
+    @media (max-width: 650px){
+      padding:0 !important;
+    }
+}
+.business-banner-title{
+  font-family:"Proxima Nova",Arial, sans-serif;
+  font-weight:bold;
+  font-size: 30px;
+  color: #fff;
+  @media(max-width:600px){
+    text-align: center;
+  }
+}
+.businesspage-slider-top{
+  .item-content-wrapper{
+    text-align: center;
+    .red-button{
+      font-size:18px;
+    }
+  }
+
+}
+
+.business-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .business-list__item{
+    box-sizing: border-box;
+    width:360px;
+    height:460px;
+    margin-top:18px;
+    padding:30px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    position: relative;
+      a{
+        display: flex;
+        flex-direction:column;
+        justify-content:flex-end;
+        height:100%;
+        color: #fff;
+      }
+      .business-item-titile{
+        font-family: "Proxima Nova Extra Bold", Arial, Helvetica, sans-serif;
+        font-weight:900;
+        font-size:20px;
+        border-bottom: 1px solid #ececec;
+        padding-bottom:10px;
+      }
+    .business-item-subtitle{
+      font-size:16px;
+      margin-top:20px;
+    }
+    &:nth-child(even){
+      margin-left:15px;
+    }
+    @media(max-width: 650px){
+      margin:18px auto !important;
+      &:nth-child(even){
+        margin-left: 0px !important;
+        margin:18px auto !important;
+      }
+    }
+    .business-item-img{
+      position: absolute;
+      top:0;
+      left:0;
+      z-index: -1;
+      width:100%;
+      height:100%;
+    }
+  }
+
+
+}
+.business-item-3 a{
+  color: #000 !important;
+  .business-item-titile{
+    border-bottom: 1px solid #000 !important;
+  }
+}
+.priority-title{
+  font-family:"Proxima Nova Semibold", Arial, Helvetica, sans-serif;
+  font-size:24px;
+  margin:80px 0px 60px;
+  color: #333;
+}
+.priority-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.priority-list__item{
+  width: 160px;
+  margin-right: 31px;
+  margin-top: 60px;
+    .priority-icon-wrap{
+      -webkit-border-radius:100%;
+      -moz-border-radius:100%;
+      border-radius:100%;
+      background: #a3a9a9;
+      width: 160px;
+      height:160px;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+     }
+    .priority-item-title{
+      text-align: center;
+      font-size:16px;
+      color: #6b7676;
+      margin-top:20px;
+    }
+}
+.priority-list{
+  @media(max-width: 768px){
+    margin: 0px 25px;
+  }
+}

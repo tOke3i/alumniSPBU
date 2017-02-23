@@ -1,0 +1,114 @@
+// base style
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	font: 300 7px/1.33 $font_1;
+
+// if you want responsive adaptive
+	@media (min-width: $tablet) {
+		font-size: 9px;
+	}
+	@media (min-width: $desktop) {
+		font-size: 10px;
+	}
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+	min-width: 30rem;
+	min-height: 100%;
+	font: 300 2rem/1.3 $font_1;
+	font-family:"Proxima Nova", Arial, sansserif;
+	color: black;
+	overflow-x: hidden;
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: url("../img/body-bg.png");
+	background-repeat: no-repeat;
+	background-color: #f6f6f6;
+	background-position: 120% -49%;
+		@media(max-width: 768px){
+				background-img: none !important;
+				background: #f6f6f6;
+		}
+	@media(max-width:650px){
+		min-height:100vh;
+		background-color: #f6f6f6 !important;
+	}
+}
+
+dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		outline: none;
+	}
+}
+
+.page-wrapper {
+	position: relative;
+	min-height: 100%;
+	height: auto !important;
+	overflow: hidden;
+	margin:auto;
+	min-height: 100vh;
+}
+.container{
+	position: relative;
+	min-height: 100%;
+	height: auto !important;
+	overflow: hidden;
+	margin: auto;
+	padding-bottom: 130px;
+	max-width:1200px;
+}
+
+input:focus{
+	background-color: #fff !important;
+	outline: none;
+}
+p.tag a {
+	margin-right: 5px;
+}
+p.tag{
+	@media(max-width: 650px){
+		display: none !important;
+	}
+}
+.subtitle a{
+	color: #697171;
+}
+
+.pd_main_35{
+	padding:0 35px;
+}
+.pd_main_20{
+	padding: 0 20px;
+}
+.pd_main_15{
+	padding:0 15px;
+}
+
+.pd_main_17{
+	padding:0 17.5px;
+}
+.banner-wrap-all-pg{
+	height:280px;
+	@media(max-width:650px){
+		height:320px !important;
+	}
+}

@@ -1,0 +1,110 @@
+.comment-wrapper {
+	.wrapper-form {
+		.title {
+			margin-bottom: 20px;
+			font-size: 24px;
+			color: $color-black-1;
+			font-family: $font-proxima-semibold;
+		}
+		textarea {
+			resize: none;
+			padding: 25px;
+			height: 180px;
+			width: 100%;
+			border: 1px solid $color-bg-placeholder;
+			background-color: $color-bg-placeholder;
+			border-radius: 15px;
+			font-size: 14px;
+			outline: none;
+			display: block;
+			margin-bottom: 20px;
+			&:focus {
+				background-color: transparent;
+			}
+			::-webkit-input-placeholder {
+		    color: $color-placeholder; 
+		  }
+		  ::-moz-placeholder {
+		    color: $color-placeholder; 
+		  }
+		  :-moz-placeholder {
+		    color: $color-placeholder; 
+		  }
+		  :-ms-input-placeholder {
+		    color: $color-placeholder; 
+		  }
+		}
+	}
+	.comment-tree-wrapper {
+		margin-top: 45px;
+		.comment-item {
+			margin-bottom: 40px;
+			overflow: hidden;
+			.comment-item {
+				padding-left: 15%;
+			}
+			.answers {
+				margin-top: 40px;
+				>.comment-item {
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+			.avatar {
+				width: 100%;
+				text-align: center;
+				margin-bottom: 15px;
+				img {
+					width: 77px;
+					height: 77px;
+				}
+			}
+			.content-comment {
+				width: 100%;
+				.name-date {
+					margin-bottom: 11px;
+					.name {
+						font-size: 19px;
+						color: $color-black-1;
+						font-weight: 900;
+						margin-right: 10px;
+					}
+					.time {
+							color:$color-btn-blue-grey;
+							font-size: 12px;
+					}
+				}
+				.text {
+					font-size: 14px;
+					color: $color-grey;
+				}
+				.answer {
+					color:$color-btn-blue-grey;
+					font-size: 12px;
+					text-decoration: underline;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width:700px) {
+	.comment-wrapper {
+		.comment-tree-wrapper {
+			.comment-item {
+				.avatar {
+				    width: 15%;
+				    float: left;
+				    text-align: left;
+				}
+				.content-comment {
+				    float: left;
+				    width: 85%;
+				}
+			}
+		}
+	}
+}

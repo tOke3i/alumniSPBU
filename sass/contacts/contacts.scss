@@ -1,0 +1,233 @@
+.contacts-top__form-wrapper{
+  background: #fff;
+}
+.contacts-title{
+  font-family:"Proxima Nova Semibold", Arial, sans-serif;
+  font-weight:bold;
+  font-size: 24px;
+  margin: 40px auto 40px;
+  max-width: 1150px;
+}
+.contacts-top{
+  display: flex;
+  flex-wrap: wrap;
+   @media(max-width:1024px){
+     flex-direction: column;
+   }
+}
+.contacts-top__map-wrapper, .contacts-top__form-wrapper{
+  width:50%;
+}
+@media(max-width:1024px){
+  .contacts-top__map-wrapper{
+    width:100%;
+    height:300px;
+  }
+  .contacts-top__form-wrapper{
+    width:100%;
+  }
+}
+
+.cont-adress-wrap{
+  border-bottom: 1px solid #e4e4e4;
+  padding: 20px 45px 25px 20px;
+  max-width:600px;
+  color: #6b7676;
+  font-family:"Proxima Nova", Arial, sans-serif;
+  font-size:14px;
+}
+
+.adress-title, .phone-title, .cont-email-item{
+  font-weight:bold;
+  font-family:"Proxima Nova Extra Bold", Arial, sans-serif;
+  font-size: 14px;
+  color: #6b7676;
+}
+.cont-phone-email-wrap{
+  display: flex;
+}
+.cont-phone-item{
+  margin-right: 80px;
+}
+.cont-adress-item{
+  margin-bottom: 25px;
+}
+.form-cont-title{
+  font-family:"Proxima Nova Semibold";
+  font-size:24px;
+  margin-bottom: 15px;
+}
+.form-cont-page-wrapper{
+  padding:35px 60px 45px 40px;
+  max-width:600px;
+}
+.form-input-item{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:16px;
+  align-self:center;
+    input{
+      box-sizing: border-box;
+      width:395px;
+      -webkit-border-radius:3px;
+      -moz-border-radius:3px;
+      border-radius:3px;
+      border:1px solid #efefef;
+      padding:17px 0 22px 17px;
+      font-family: 'Proxima Nova Thin', Arial, Helvetica, sans-serif;
+      font-size:14px;
+      &::-webkit-input-placeholder {
+        font-family: 'Proxima Nova Thin', Arial, Helvetica, sans-serif;
+        font-size:14px;
+      }
+
+      &:-ms-input-placeholder {
+        font-family: 'Proxima Nova Thin', Arial, Helvetica, sans-serif;
+      }
+
+      &::-moz-placeholder {
+        font-family: 'Proxima Nova Thin', Arial, Helvetica, sans-serif;
+      }
+
+      &::-moz-placeholder {
+        font-family: 'Proxima Nova Thin', Arial, Helvetica, sans-serif;
+      }
+      @media(max-width: 1024px){
+
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+  label{
+    font-family:"Proxima Nova", Arial, sans-serif;
+    font-size: 14px;
+    color: #6b7676;
+    display: flex;
+    align-items: center;
+  }
+  @media(max-width: 1024px){
+    flex-direction:column;
+  }
+}
+.input-bg-dark{
+  background-color: #efefef;
+}
+.capture-send-btn-wrapper{
+
+}
+.capture{
+  width:55%;
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  &:after{
+    font-family: FontAwesome;
+    content: "\f105";
+    position: absolute;
+    top: 17px;
+    color: #9d9d9d;
+    right: -16px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+.form-btn-flex{
+  display: flex;
+  width: 45%;
+  flex-wrap: wrap;
+  justify-content:flex-end;
+    input{
+      width:185px;
+    }
+  @media(max-width:1024px){
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.capture-send-btn-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.person-ava {
+  display: flex;
+  align-items: center;
+}
+#cont-page-form-send{
+  width:165px;
+  margin:0px;
+  font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  height:43px;
+  line-height:43px;
+}
+.team-title{
+  font-family:"Proxima Nova Semibold", Arial, Helvetica, sans-serif;
+  font-size:24px;
+  margin-top:55px;
+  margin-left: 35px;
+}
+.our-teamlist__item{
+  width:350px;
+  padding: 35px 25px 25px;
+  background: #fff;
+  font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 25px 0px 35px 35px;
+  box-sizing: border-box;
+  box-shadow: 0.5px 1px 1px 0px rgba(0, 0, 0, 0.02);
+  @media(max-width: 1024px){
+    width: 90%;
+    margin: 25px auto;
+}
+}
+.team-person-name{
+  font-weight:bold;
+}
+.team-img-wrap{
+  img{
+    margin-right:15px;
+    border-radius: 100%;
+  }
+}
+.team-person-job-list{
+  list-style: disc inside;
+}
+.team-person-job-list, .person-ava{
+  border-bottom: 1px solid #d5d6d6;
+}
+.tw-icon{
+  background: #55acee;
+}
+.our-teamlist__item .socilas-list{
+  width:100%;
+   justify-content:flex-start;
+  margin-top:20px;
+    li{
+      margin-right:20px;
+    }
+}
+.team-person-job-list li{
+  margin-top:18px;
+   &:first-child{
+     margin-top:25px;
+   }
+  &:last-child{
+    margin-bottom:25px;
+  }
+
+}
+.team-person-contacts{
+  margin: 25px auto 0px;
+  border-bottom: 1px solid #d5d6d6;
+  padding-bottom: 25px;
+  .team-mail{
+      color: #5db1a7;
+    }
+}
+.our-teamlist{
+  display: flex;
+  flex-wrap: wrap;
+}
+

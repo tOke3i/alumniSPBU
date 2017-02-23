@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    g
+    <meta name="robots" content="index,follow">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="format-detection" content="telephone=no">
+    <title> University </title>
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&amp;subset=cyrillic-ext" rel="stylesheet">
+    <!--Font Awsome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--SLICKSLIDER-->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!--Slick Slider ENDs-->
+    <!--Main Css-->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="page-wrapper">
+    <!--HEADER STARTS-->
+    <header class="header">
+        <div class="header-top">
+                    <span id="burger-mobile" class="burger_wrapper">
+                            <!--<a class="">-->
+                                <span class="burger-line"></span>
+                                <span class="burger-line"></span>
+                                <span class="burger-line"></span>
+                        <!--</a>-->
+                        </span>
+            <div class="header-top__logo">
+                <img src="img/logo.svg" alt="logo">
+            </div>
+            <div class="search-mobile">
+                <a href="#">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="header-top__search">
+                <input id="top-search" placeholder="Найти одногруппника, событие, прочее ..." type="search"/>
+
+            </div>
+            <div class="header-top__socials">
+                <ul class="socilas-list">
+                    <li class="socials youtube-icon">
+                        <a href="#">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="socials fb-icon">
+                        <a href="#">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="socials ln-icon">
+                        <a href="#">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+
+                    </li>
+                    <li class="socials vk-icon">
+                        <a href="#">
+                            <i class="fa fa-vk" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-top__regist">
+                <p><a href="#">Вход</a><a href="#">Регистрация</a></p>
+            </div>
+        </div>
+        <div class="header-block2">
+            <nav class="nav-menu-wrapper">
+
+
+                    <span class="burger-descktop">
+                            <a class="burger_wrapper">
+                                <span class="burger-line"></span>
+                                <span class="burger-line"></span>
+                                <span class="burger-line"></span>
+                            </a>
+                        </span>
+
+                <ul id="nav">
+                    <div class="header-top__regist">
+                        <p><a href="#">Вход</a><a href="#">Регистрация</a></p>
+                    </div>
+                    <li class="header-nav__item"><a href="#">Ассоциация</a></li>
+                    <li class="header-nav__item"><a href="#">Деятельность</a></li>
+                    <li class="header-nav__item"><a href="#">Мероприятия</a></li>
+                    <li class="header-nav__item"><a href="#">Партнеры</a></li>
+                    <li class="header-nav__item"><a href="#">Что нового</a></li>
+                    <li class="header-nav__item"><a href="#">Взносы и пожертвования</a></li>
+                    <li class="header-nav__item"><a href="#">Контакты</a></li>
+                    <li class="header-nav__item trend"><a href="#"><i class="fa fa-bolt" aria-hidden="true"></i>
+                        Тренды</a></li>
+                    <div class="header-top__socials">
+                        <ul class="socilas-list">
+                            <li class="socials fb-icon">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="socials ln-icon">
+                                <a href="#">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </a>
+
+                            </li>
+                            <li class="socials vk-icon">
+                                <a href="#">
+                                    <i class="fa fa-vk" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <!--HEADER ENDS-->
+    <div class="contacts-title">
+        <h2>Контакты</h2>
+    </div>
+    <div class="contacts-top">
+        <div class="contacts-top__map-wrapper" id="map">
+            <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+
+            <script>
+                ymaps.ready(init);
+
+                function init () {
+                    var map = new ymaps.Map('map', {
+                                center: [59.9405305,30.292754],
+                                zoom: 13
+                            }),
+
+                            BalloonContentLayout = ymaps.templateLayoutFactory.createClass(
+                                    '<div class="map-pop-up" style="margin: 10px;">' +
+                                            '<img src="img/map-img.png">'+
+                                    '</div>');
+
+                    var placemark = new ymaps.Placemark([59.9405305,30.292754],{
+                        name: 'Считаем',
+                        hintContent: 'СПБГУ, Санкт-Петербург, Университетская наб., д.7/9, ком.7А '
+                    },{
+
+                        iconLayout: 'default#image',
+
+                        iconImageHref: 'img/icon_locatio_map.svg',
+
+                        iconImageSize: [30, 42],
+                        iconImageOffset: [-5, -38],
+                        balloonContentLayout: BalloonContentLayout
+                    }, {
+
+                    });
+
+                    map.geoObjects.add(placemark);
+                    map.behaviors.disable('scrollZoom');
+                    map.behaviors.disable('drag');
+                }
+            </script>
+
+        </div>
+        <div class="contacts-top__form-wrapper">
+            <div class="cont-adress-wrap">
+                <div class="cont-adress-item">
+                    <p class="adress-title">Адрес</p>
+                    <p> 199034, Санкт-Петербург, Университетская наб., д.7/9, ком.7А</p>
+                </div>
+                <div class="cont-phone-email-wrap">
+                    <div class="cont-phone-item">
+                        <p class="phone-title">Телефон</p>
+                        <p>+7 (812) 363-60-20</p>
+                    </div>
+                    <div class="cont-email-item">
+                        <p class="email-title">
+                            E-mail
+                        </p>
+                        <p>info@alumnispbu.net</p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-cont-page-wrapper">
+                <div class="form-cont-title-wrapper">
+                    <h3 class="form-cont-title">Отправить письмо</h3>
+                </div>
+                <form id="cont-page-form" action="/">
+                    <div class="form-input-item">
+                        <label for="cont-name">Имя</label>
+                        <input type="text" id="cont-name" name="cont-name" placeholder="Дарья">
+                    </div>
+                    <div class="form-input-item">
+                        <label for="cont-email">E-mail</label>
+                        <input type="text" id="cont-email" name="cont-email" placeholder="daria@gmail.com">
+                    </div>
+                    <div class="form-input-item">
+                        <label for="cont-phone">Телефон</label>
+                        <input class="input-bg-dark" id="cont-phone" name="cont-phone" type="text" placeholder="Напишите телефон">
+                    </div>
+                    <div class="form-input-item ">
+                        <label for="cont-message">Сообщение</label>
+                        <input class="input-bg-dark" id="cont-message"  name="cont-msg" type="text-area" placeholder="Напишите сообщение">
+                    </div>
+                    <div class="capture-send-btn-wrapper">
+                        <div class="capture">
+                            <img src="img/capture.png" alt="">
+                        </div>
+                        <div class="form-btn-flex">
+                            <div class="form-input-item">
+                                <label for="cont-symbols" ></label>
+                                <input class="input-bg-dark" name="symbols" id="cont-symbols" placeholder="Напишите символы" type="text">
+                            </div>
+                            <button class="main-button" id="cont-page-form-send" type="submit">Отправить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--contacts-top__form-wrapper ENDS-->
+    </div>
+    <!--CONTCTS-TOP ENDS-->
+    <div class="container">
+
+
+        <!--Main Starts-->
+        <main class="main main-contacts">
+
+            <div class="team-wrapper">
+                <h2 class="team-title">Наша команда</h2>
+                <ul class="our-teamlist">
+                    <!--TEAM ITEM STARTS-->
+                    <li class="our-teamlist__item">
+                        <div class="person-ava">
+                            <div class="team-img-wrap">
+                                <img src="img/ava-1.png" alt="">
+                            </div>
+                            <div class="team-person-name-wrap">
+                                <p class="team-person-name">
+                                    Мария Александровна
+                                    Горизонтова
+                                </p>
+                                <p class="team-person-job">
+                                    Исполнительный директор
+                                </p>
+                            </div>
+                        </div>
+                        <div class="team-person-contacts">
+                            <p><span>
+                                E-mail:
+                            </span> <a class="team-mail" href="mailto:m.gorizontova@gmal.com">m.gorizontova@gmal.com</a></p>
+                            <p><span>Телефон:</span><a href="tel:+7812363-60-20">  + 7 (812) 363-60-20</a></p>
+                        </div>
+                        <ul class="team-person-job-list">
+                            <li>База данных</li>
+                            <li>Заявки на вступление в АВ СПбГУ</li>
+                            <li>Именные карты членов</li>
+                            <li>Сувенирная продукция</li>
+                        </ul>
+                        <ul class="socilas-list">
+                            <li class="socials tw-icon">
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="socials fb-icon">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="socials vk-icon">
+                                <a href="#">
+                                    <i class="fa fa-vk" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--TEAM ITEM ENDS-->
+                    <!--TEAM ITEM STARTS-->
+                    <li class="our-teamlist__item">
+                        <div class="person-ava">
+                            <div class="team-img-wrap">
+                                <img src="img/ava-2.png" alt="">
+                            </div>
+                            <div class="team-person-name-wrap">
+                                <p class="team-person-name">
+                                    Елена Валерьевна
+                                    Флеминг
+                                </p>
+                                <p class="team-person-job">
+                                    Исполнительный директор
+                                </p>
+                            </div>
+                        </div>
+                        <div class="team-person-contacts">
+                            <p><span>
+                                E-mail:
+                            </span> <a class="team-mail" href="mailto:m.gorizontova@gmal.com">m.gorizontova@gmal.com</a></p>
+                            <p><span>Телефон:</span><a href="tel:+7812363-60-20">  + 7 (812) 363-60-20</a></p>
+                        </div>
+                        <ul class="team-person-job-list">
+                            <li>База данных</li>
+                            <li>Заявки на вступление в АВ СПбГУ</li>
+                            <li>Именные карты членов</li>
+                            <li>Сувенирная продукция</li>
+                        </ul>
+                        <ul class="socilas-list">
+                            <!--<li class="socials tw-icon">-->
+                                <!--<a href="#">-->
+                                    <!--<i class="fa fa-twitter" aria-hidden="true"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                            <li class="socials fb-icon">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="socials vk-icon">
+                                <a href="#">
+                                    <i class="fa fa-vk" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--TEAM ITEM ENDS-->
+                    <!--TEAM ITEM STARTS-->
+                    <li class="our-teamlist__item">
+                        <div class="person-ava">
+                            <div class="team-img-wrap">
+                                <img src="img/ava-3.png" alt="">
+                            </div>
+                            <div class="team-person-name-wrap">
+                                <p class="team-person-name">
+                                    Ольга Алексеевна
+                                    Разуваева
+                                </p>
+                                <p class="team-person-job">
+                                    Исполнительный директор
+                                </p>
+                            </div>
+                        </div>
+                        <div class="team-person-contacts">
+                            <p><span>
+                                E-mail:
+                            </span> <a class="team-mail" href="mailto:m.gorizontova@gmal.com">m.gorizontova@gmal.com</a></p>
+                            <p><span>Телефон:</span><a href="tel:+7812363-60-20">  + 7 (812) 363-60-20</a></p>
+                        </div>
+                        <ul class="team-person-job-list">
+                            <li>База данных</li>
+                            <li>Заявки на вступление в АВ СПбГУ</li>
+                            <li>Именные карты членов</li>
+                            <li>Сувенирная продукция</li>
+                        </ul>
+                        <ul class="socilas-list">
+                            <li class="socials tw-icon">
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="socials fb-icon">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="socials vk-icon">
+                                <a href="#">
+                                    <i class="fa fa-vk" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--TEAM ITEM ENDS-->
+                    <!--TEAM ITEM STARTS-->
+                    <li class="our-teamlist__item">
+                        <div class="person-ava">
+                            <div class="team-img-wrap">
+                                <img src="img/ava-4.png" alt="">
+                            </div>
+                            <div class="team-person-name-wrap">
+                                <p class="team-person-name">
+                                    Юрий Андреевич
+                                    Смирнов
+                                </p>
+                                <p class="team-person-job">
+                                    Исполнительный директор
+                                </p>
+                            </div>
+                        </div>
+                        <div class="team-person-contacts">
+                            <p><span>
+                                E-mail:
+                            </span> <a class="team-mail" href="mailto:m.gorizontova@gmal.com">m.gorizontova@gmal.com</a></p>
+                            <p><span>Телефон:</span><a href="tel:+7812363-60-20">  + 7 (812) 363-60-20</a></p>
+                        </div>
+                        <ul class="team-person-job-list">
+                            <li>База данных</li>
+                            <li>Заявки на вступление в АВ СПбГУ</li>
+                            <li>Именные карты членов</li>
+                            <li>Сувенирная продукция</li>
+                        </ul>
+                        <ul class="socilas-list">
+                            <li class="socials tw-icon">
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="socials fb-icon">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="socials vk-icon">
+                                <a href="#">
+                                    <i class="fa fa-vk" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--TEAM ITEM ENDS-->
+                    <!--TEAM ITEM STARTS-->
+                    <li class="our-teamlist__item">
+                        <div class="person-ava">
+                            <div class="team-img-wrap">
+                                <img src="img/ava-5.png" alt="">
+                            </div>
+                            <div class="team-person-name-wrap">
+                                <p class="team-person-name">
+                                    Татьяна Николаевна
+                                    Анашкина
+                                </p>
+                                <p class="team-person-job">
+                                    Исполнительный директор
+                                </p>
+                            </div>
+                        </div>
+                        <div class="team-person-contacts">
+                            <p><span>
+                                E-mail:
+                            </span> <a class="team-mail" href="mailto:m.gorizontova@gmal.com">m.gorizontova@gmal.com</a></p>
+                            <p><span>Телефон:</span><a href="tel:+7812363-60-20">  + 7 (812) 363-60-20</a></p>
+                        </div>
+                        <ul class="team-person-job-list">
+                            <li>База данных</li>
+                            <li>Заявки на вступление в АВ СПбГУ</li>
+                            <li>Именные карты членов</li>
+                            <li>Сувенирная продукция</li>
+                        </ul>
+                        <ul class="socilas-list">
+                            <li class="socials tw-icon">
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="socials fb-icon">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="socials vk-icon">
+                                <a href="#">
+                                    <i class="fa fa-vk" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--TEAM ITEM ENDS-->
+                    <!--TEAM ITEM STARTS-->
+                    <li class="our-teamlist__item">
+                        <div class="person-ava">
+                            <div class="team-img-wrap">
+                                <img src="img/ava-6.png" alt="">
+                            </div>
+                            <div class="team-person-name-wrap">
+                                <p class="team-person-name">
+                                    Екатерина Борисовна
+                                    Потапова
+                                </p>
+                                <p class="team-person-job">
+                                    Исполнительный директор
+                                </p>
+                            </div>
+                        </div>
+                        <div class="team-person-contacts">
+                            <p><span>
+                                E-mail:
+                            </span> <a class="team-mail" href="mailto:m.gorizontova@gmal.com">m.gorizontova@gmal.com</a></p>
+                            <p><span>Телефон:</span><a href="tel:+7812363-60-20">  + 7 (812) 363-60-20</a></p>
+                        </div>
+                        <ul class="team-person-job-list">
+                            <li>База данных</li>
+                            <li>Заявки на вступление в АВ СПбГУ</li>
+                            <li>Именные карты членов</li>
+                            <li>Сувенирная продукция</li>
+                        </ul>
+                        <ul class="socilas-list">
+                            <li class="socials tw-icon">
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="socials fb-icon">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="socials vk-icon">
+                                <a href="#">
+                                    <i class="fa fa-vk" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--TEAM ITEM ENDS-->
+                    <!--TEAM ITEM STARTS-->
+                    <li class="our-teamlist__item">
+                        <div class="person-ava">
+                            <div class="team-img-wrap">
+                                <img src="img/ava-7.png" alt="">
+                            </div>
+                            <div class="team-person-name-wrap">
+                                <p class="team-person-name">
+                                    Дмитрий Алексеевич
+                                    Гусев
+                                </p>
+                                <p class="team-person-job">
+                                    Исполнительный директор
+                                </p>
+                            </div>
+                        </div>
+                        <div class="team-person-contacts">
+                            <p><span>
+                                E-mail:
+                            </span> <a class="team-mail" href="mailto:m.gorizontova@gmal.com">m.gorizontova@gmal.com</a></p>
+                            <p><span>Телефон:</span><a href="tel:+7812363-60-20">  + 7 (812) 363-60-20</a></p>
+                        </div>
+                        <ul class="team-person-job-list">
+                            <li>База данных</li>
+                            <li>Заявки на вступление в АВ СПбГУ</li>
+                            <li>Именные карты членов</li>
+                            <li>Сувенирная продукция</li>
+                        </ul>
+                        <ul class="socilas-list">
+                            <li class="socials tw-icon">
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="socials fb-icon">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="socials vk-icon">
+                                <a href="#">
+                                    <i class="fa fa-vk" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--TEAM ITEM ENDS-->
+                    <!--TEAM ITEM STARTS-->
+                    <li class="our-teamlist__item">
+                        <div class="person-ava">
+                            <div class="team-img-wrap">
+                                <img src="img/ava-8.png" alt="">
+                            </div>
+                            <div class="team-person-name-wrap">
+                                <p class="team-person-name">
+                                    Вера Владимировна
+                                    Конашёнок
+                                </p>
+                                <p class="team-person-job">
+                                    Исполнительный директор
+                                </p>
+                            </div>
+                        </div>
+                        <div class="team-person-contacts">
+                            <p><span>
+                                E-mail:
+                            </span> <a class="team-mail" href="mailto:m.gorizontova@gmal.com">m.gorizontova@gmal.com</a></p>
+                            <p><span>Телефон:</span><a href="tel:+7812363-60-20">  + 7 (812) 363-60-20</a></p>
+                        </div>
+                        <ul class="team-person-job-list">
+                            <li>База данных</li>
+                            <li>Заявки на вступление в АВ СПбГУ</li>
+                            <li>Именные карты членов</li>
+                            <li>Сувенирная продукция</li>
+                        </ul>
+                        <ul class="socilas-list">
+                            <li class="socials tw-icon">
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="socials fb-icon">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <!--<li class="socials vk-icon">-->
+                                <!--<a href="#">-->
+                                    <!--<i class="fa fa-vk" aria-hidden="true"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                        </ul>
+                    </li> <!--TEAM ITEM ENDS-->
+                    <!--TEAM ITEM STARTS-->
+                    <li class="our-teamlist__item">
+                        <div class="person-ava">
+                            <div class="team-img-wrap">
+                                <img src="img/ava-9.png" alt="">
+                            </div>
+                            <div class="team-person-name-wrap">
+                                <p class="team-person-name">
+                                    Татьяна Сергеевна
+                                    Зайцева
+                                </p>
+                                <p class="team-person-job">
+                                    Исполнительный директор
+                                </p>
+                            </div>
+                        </div>
+                        <div class="team-person-contacts">
+                            <p><span>
+                                E-mail:
+                            </span> <a class="team-mail" href="mailto:m.gorizontova@gmal.com">m.gorizontova@gmal.com</a></p>
+                            <p><span>Телефон:</span><a href="tel:+7812363-60-20">  + 7 (812) 363-60-20</a></p>
+                        </div>
+                        <ul class="team-person-job-list">
+                            <li>База данных</li>
+                            <li>Заявки на вступление в АВ СПбГУ</li>
+                            <li>Именные карты членов</li>
+                            <li>Сувенирная продукция</li>
+                        </ul>
+                        <ul class="socilas-list">
+                            <li class="socials tw-icon">
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <!--<li class="socials ln-icon">-->
+                                <!--<a href="#">-->
+                                    <!--<i class="fa fa-linkedin" aria-hidden="true"></i>-->
+                                <!--</a>-->
+
+                            <!--</li>-->
+                            <li class="socials vk-icon">
+                                <a href="#">
+                                    <i class="fa fa-vk" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--TEAM ITEM ENDS-->
+                </ul>
+            </div>
+        </main>
+        <!--MAIN ENDS-->
+
+
+
+    </div>
+    <!--Container-->
+
+    <!--FOOTER STARTS-->
+    <footer>
+        <ul class="footer_nav">
+            <li>
+                <span>199034, Санкт-Петербург,</span>
+                <br>
+                <span>Университетская наб., д. 7/9</span>
+            </li>
+            <li>
+                <img src="img/logo_footer.png" alt="">
+            </li>
+            <li>
+                <span><a href="tel:+78123636020">+7 (812) 363-60-20</a></span>
+                <br>
+                <span><a href="mailto:info@alumnispbu.net">info@alumnispbu.net</a></span>
+            </li>
+        </ul>
+    </footer>
+    <!--FOOTER ENS-->
+</div>
+<!--pagewrapper ENDS-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!-- Isotope -->
+<script src="js/isotope.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/helper.js"></script>
+<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+<script src="js/icheck.min.js"></script>
+<script src="js/jquery.selectric.min.js"></script>
+<script src="js/jquery.backstretch.js"></script>
+<script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

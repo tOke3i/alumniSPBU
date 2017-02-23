@@ -1,0 +1,323 @@
+
+.doc-banner-wrapper{
+  display: block;
+  margin: 0 auto;
+  position: relative;
+
+    img{
+      width:100%;
+    }
+  margin-bottom:35px;
+  @media(max-width:650px){
+    align-items:center;
+    padding-left:0;
+    margin-bottom: 100px !important;
+    min-height: 160px;
+  }
+  .doc-banner-title{
+    width:100%;
+    position: absolute;
+    bottom:40px;
+    left:40px;
+    z-index: 1;
+    font-family:"Proxima Nova",Arial, sans-serif;
+    font-weight:bold;
+    font-size: 30px;
+    color: #fff;
+    @media(max-width:600px){
+      text-align: center;
+    }
+  }
+  @media(max-width:600px){
+
+    display: none;
+
+  }
+}
+
+.sort-select-wrapper-amount{
+  position: relative;
+  &:after{
+    content: '\f107';
+    font-family: FontAwesome;
+    position: absolute;
+    right:10px;
+    color: #000;
+  }
+}
+.sortblock-docs{
+  height:80px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:25px;
+  color: #697171;
+  font-size:14px;
+  padding: 0px 23px;
+  vertical-align: middle;
+  font-family: "Proxima Nova", Arial, sans-serif;
+    select{
+      line-height:100%;
+    }
+
+}
+.sort-select-wrapper{
+  display: flex;
+  align-items:center;
+  height:100%;
+  justify-content: space-around;
+  max-width:350px;
+}
+.sortblock-docs select {
+  color: #a1a5a5;
+}
+//SELECT STARTS
+.select-sort {
+  padding: 0;
+  margin: 0;
+  border: none;
+  height:30px;
+  width: 185px;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #efefef;
+  display: flex;
+  align-items:center;
+}
+.select-amount-wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.select-sort select {
+  background-color: #efefef;
+  padding: 5px 8px;
+  width: 130%;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.select-sort select:focus {
+  outline: none;
+}
+.sort-label, .sort-label-amount{
+  margin-right:20px;
+}
+.select-amount-wrapper select{
+  background-color: #efefef;
+  padding: 5px 8px;
+  width: 130%;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.sort-select-wrapper-amount{
+  padding: 0;
+  margin: 0;
+  border: none;
+  height:30px;
+  width: 65px;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #efefef;
+  display: flex;
+  align-items:center;
+}
+//SELECT ENDS
+.top-docs-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.top-docs-item{
+  width:355px;
+  height:92px;
+  background: #cd3e5c;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  font-family:"Proxima Nova", Arial, sans-serif;
+  font-size:16px;
+
+    a{
+      display: block;
+      height:100%;
+      color: #fff;
+    }
+  img{
+    margin-right:10px;
+    width:55px;
+  }
+  
+}
+.file-name-size-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.annual-reporting-wrapper{
+  .annual-report-list{
+    border-bottom:1px solid #dfe2e2;
+    padding-bottom:40px;
+  }
+
+}
+.annual-reporting-title{
+  font-family:"Proxima Nova Extra Bold", Arial, sans-serif;
+  font-size: 19px;
+  color: #333;
+  margin-top:40px;
+}
+.annual-report-list{
+  .file-name-size-wrapper{
+    max-width:80%;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  font-family:"Proxima Nova", Arial, sans-serif;
+  font-size:16px;
+  .annual-report-item{
+    display: flex;
+    flex-wrap: wrap;
+    flex:1 0 300px;
+    position: relative;
+      &:hover .doc-hover__list{
+        display: flex !important;
+      }
+    .doc-icon{
+      margin-right:20px;
+      height:55px;
+      background-repeat: no-repeat;
+    }
+    .doc-icon-red-bg{
+      margin-right:20px;
+      height:55px;
+      background-repeat: no-repeat;
+    }
+    margin-top:43px;
+  }
+    &:last-child{
+      .annual-report-item{
+        margin-top:53px;
+      }
+    }
+}
+//
+.account-details-title{
+  font-family:"Proxima Nova Extra Bold", Arial, sans-serif;
+  font-size:19px;
+  color: #333;
+}
+.account-details-wrapper{
+  padding-right:35px;
+  p{
+  font-family:"Proxima Nova",Arial, sans-serif;
+  font-size:16px;
+  color: #333;
+}
+  div{
+    margin-top:25px;
+  }
+}
+.doc-hover-wraper{
+  width:100%;
+}
+.doc-hover__list{
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+  padding:30px;
+  background: rgba(178,195,195, 0.7);
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 350px;
+  display: none;
+    .doc-hover-item{
+      display: flex;
+      align-items:center;
+      flex-direction:column;
+      justify-content: center;
+      height:60px;
+      font-family: "Proxima Nova", Arial, sans-serif;
+        a{
+          color: #fff;
+          display: flex;
+          flex-direction:column;
+          align-items: center;
+        }
+        .icon-hover-download{
+          margin:auto;
+          //background-image: url("../../img/downlod-doc.png");
+          background-repeat:no-repeat;
+          background-position: center center;
+          position: relative;
+            &:after{
+              content: '';
+              height:65px;
+              border-left:1px solid #fff;
+              position: absolute;
+              right:-100%;
+            }
+        }
+      .icon-hover-see{
+        margin: 12px auto 0;
+        //background-image: url("../../img/eye.png");
+        background-repeat:no-repeat;
+        background-position: center center;
+      }
+    }
+}
+#docs-sort-by .selectric{
+  width:200px !important;
+}
+@media(max-width: 650px){
+  .top-docs-item{
+    width:100% !important;
+    margin-top:25px;
+  }
+  .top-docs-wrapper{
+    flex-wrap: wrap;
+  }
+  .annual-report-list .file-name-size-wrapper{
+    width:75%;
+  }
+  .account-details-wrapper{
+    padding:0;
+  }
+}
+@media(max-width: 600px){
+  .top-docs-item{
+    width:100% !important;
+    height: 100px;
+
+  }
+  .sortblock-docs{
+    flex-wrap: wrap;
+  }
+  .top-docs-wrapper{
+    flex-wrap: wrap;
+  }
+  .sortblock-docs .sort-select-wrapper{
+    width:50%;
+  }
+}
+@media(max-width: 500px){
+  .sortblock-docs{
+    display: none;
+  }
+
+}

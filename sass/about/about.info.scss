@@ -1,0 +1,102 @@
+.info-list{
+  display: flex;
+  align-items: center;
+    .info-item{
+      width:33.333%;
+      display: flex;
+      justify-content:center;
+      flex-direction: column;
+      align-items:center;
+      font-family: "Proxima Nova", Arial, sans-serif;
+      font-size:18px;
+      color: #8e9696;
+        img{
+              margin-bottom:15px;
+              max-width: 55px !important;
+              max-height:55px !important;
+            }
+    }
+  .inf-item2{
+    border-right: 1px solid #8e9696;
+    border-left: 1px solid #8e9696;
+  }
+}
+.info-text-content{
+  font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+  font-size:16px;
+  color: #697171;
+  margin-top:50px;
+  padding-right: 52px;
+  margin-bottom:55px;
+  @media(max-width: 768px){
+    padding-right:30px !important;
+  }
+}
+.comments-item{
+  display: flex;
+  justify-content: space-between;
+      &:first-child{
+        margin-bottom:70px;
+      };
+  .comments-item__left{
+    display: flex;
+    flex-direction:column;
+    width:270px;
+      img{
+        width: 95px;
+        height:95px;
+
+      }
+  }
+  .quote{
+    font-family: "Roboto", Arial,sans-serif;
+    font-style: italic;
+    font-size:14px;
+    color: #697171;
+    background: #fff;
+    padding:20px 37px 20px 20px;
+    position: relative;
+    max-width:470px;
+      &:before{
+        content: ' ';
+        position: absolute;
+        top:0;
+        left:-16px;
+        width: 0;
+        height: 0;
+        border-top: 20px solid #fff;
+        border-bottom: 20px solid transparent;
+
+        border-right:20px solid transparent;
+        border-left:20px solid transparent;
+        @media (max-width:768px){
+          border-top: 20px solid #fff;
+          border-bottom: 20px solid transparent;
+
+          border-right:20px solid transparent;
+          border-left:20px solid transparent;
+        }
+      }
+  }
+  .comment-name{
+    font-family:"Proxima Nova Extra Bold", Arial, sans-serif;
+    font-weight:900;
+    font-size:24px;
+    color: #333333;
+  }
+  .comment-job{
+    font-family:"Proxima Nova", Arial, sanserif;
+    font-size:14px;
+    color: #6b7676;
+  }
+  @media(max-width: 768px){
+    flex-direction:column;
+    align-items:center;
+    .comments-item__right{
+      max-width:100% !important;
+    }
+    .comments-item__left{
+      width:100% !important;
+    }
+  }
+}

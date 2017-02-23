@@ -1,0 +1,19 @@
+.grid-line-news {
+	margin-top: 22px;
+	.grid-news-item {
+		margin-bottom: 8px;
+		.tag {
+			float: left;
+		}
+		.socials-dates-wrapper {
+			.socials {
+				width: auto;
+				margin: auto 0 auto auto;
+				padding-right: 0;
+			}
+		}
+		.adress-wrap {
+			text-align: right;
+		}
+	}
+}

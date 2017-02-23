@@ -1,0 +1,43 @@
+.sidebar-slider{
+  width: 100%;
+  margin-top:38px;
+  padding: 0px 0px 25px 0px;
+  .slick-arrow{
+    display: none !important;
+  }
+    .sidebar-slider__item{
+      background: #fff;
+      padding:12px 15px 15px;
+      width: 355px !important;
+      margin: 0;
+      .img-wrap {
+        overflow: hidden;
+        position: relative;
+        max-height: 240px;
+      }
+      .button-default {
+        height: 52px;
+        line-height: 53px;
+        text-transform: capitalize;
+        margin-top: 5px;
+        font-size: 23px;
+      }
+    }
+  .slick-dots li button:before
+  {
+    font-size: 60px;
+    line-height: 20px;
+  }
+  .slick-dots li button:after
+  {
+    font-size: 60px !important;
+    line-height: 20px;
+  }
+  .slick-dots li.slick-active button:before{
+    color: #afb2b2;
+  }
+  .slick-dots li.slick-active button:after{
+    color: #d2d4d4;
+  }
+
+}

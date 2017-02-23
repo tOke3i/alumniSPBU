@@ -1,0 +1,252 @@
+.main-events-pg{
+  padding:35px;
+}
+.events-pg-title{
+  font-family: "Proxima Nova";
+  font-weight:bold;
+  margin-bottom:35px;
+    @media(max-width: 650px){
+      display: none !important;
+    }
+}
+.events-pg-top{
+  display: flex;
+  @media (max-width:650px){
+    flex-direction: column-reverse;
+  }
+
+}
+.evetns-top-news-item{
+  background-color: #fff;
+  padding:15px;
+  max-width:485px;
+
+}
+.events-item_img-wrap{
+  .news-item_img-href{
+    display: block;
+    height:100%;
+    margin: 0px 25px 25px 0px;
+  }
+  @media(max-width:650px){
+
+    width: 35% !important;
+
+    }
+  @media(max-width:768px){
+    width: 35% !important;
+
+  }
+}
+
+.selects-items-list{
+  position: relative;
+  background: #fff;
+  margin-top:35px;
+  padding:25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .select-list__item{
+    width:125px;
+    color: #a1a5a5;
+      select{
+        color: #a1a5a5;
+
+      }
+
+  }
+  @media(max-width:650px){
+    display: none;
+  }
+}
+.select-list__item{
+  .sort-select-wrapper{
+    align-items: flex-start;
+    flex-direction:column;
+    .select-sort{
+      max-width:130px !important;
+    }
+  }
+  .sort-label{
+    font-family:"Proxima Nova", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #697171;
+  }
+}
+.select-sort{
+  position: relative;
+  &:after{
+    content: '\f107';
+    font-family: FontAwesome;
+    position: absolute;
+    right:10px;
+    color: #a1a5a5;
+  }
+}
+.events-item-short-content{
+  .tag{
+    margin-top:40px;
+  }
+  .adress-wrap{
+    border-top:none;
+    margin-top:0;
+  }
+  .socials-dates-wrapper{
+    border-bottom:none!important;
+  }
+  .item-title{
+    border-bottom:1px solid #ececec;
+    margin:0 !important;
+    padding: 15px auto 5px 0px !important;
+    min-height:20px !important;
+    padding-bottom: 15px;
+  }
+  .socials-dates-wrapper{
+    padding-top: 15px;
+  }
+}
+.main-events-item{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #fff;
+  margin-top: 15px;
+  padding:15px;
+  min-height: 270px;
+  .subtitle-wrapper-mobile{
+    display: none;
+  }
+    .adress-wrap{
+      text-align: right;
+    }
+  @media(max-width:650px){
+    height:auto;
+  .subtitle-wrapper{
+    display: none;
+  }
+    .subtitle-wrapper-mobile{
+      display: block;
+    }
+  }
+  img{
+    max-width:100%;
+  }
+}
+.main-events-item{
+  .news-item_img-href{
+    margin-bottom:0;
+  }
+}
+.events-item-short-content{
+  width:360px;
+  @media(max-width:650px){
+    width:60%;
+  }
+}
+#calendar2 tbody td {
+  border-radius: 100%;
+  vertical-align: middle;
+  padding: 8px;
+}
+
+#calendar-evets-pg{
+  width:235px;
+  font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+  margin: 0 0 0 35px;
+  @media(max-width:650px){
+    width:100%;
+    margin:auto;
+  }
+}
+
+ #calendar2 {
+   width: 100%;
+   line-height: 1.2em;
+   font-size: 15px;
+   text-align: center;
+   height: 270px;
+   thead tr{
+      &:first-child{
+        font-weight:bold;
+        font-family:Proxima Nova Extra Bold, Arial, sans-serif;
+        font-size:18px;
+          td{
+            padding-bottom:30px;
+          }
+      }
+     &:last-child{
+       td{
+         padding-bottom:30px;
+         font-size:16px;
+         @media(max-width: 650px){
+           font-size:25px;
+         }
+       }
+     }
+
+   }
+ }
+
+#calendar2 {
+  @media(max-width:650px){
+    display: none;
+  }
+
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+  color: rgb(50, 50, 50);
+}
+#calendar2 thead tr:nth-child(1){
+  @media(max-width:650px){
+    display: none;
+
+  }
+}
+.mobile-toggle-calendar{
+  text-align: center;
+  font-size:30px;
+  margin: 0px -35px 50px;
+  padding-bottom:25px;
+  border-bottom: 1px solid #e4e4e4;
+  display: none;
+    @media(max-width:650px){
+      display: block;
+    }
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+  cursor: pointer;
+}
+#calendar2 tbody td {
+  color: #6b7676;
+  @media(max-width: 650px){
+    padding: 32px 8px;
+    font-size: 25px;
+  }
+}
+.social_dates-title-wrapper{
+  display: flex;
+  flex-direction:column-reverse;
+}
+#calendar2 tbody td.today {
+  background: #ce183e;
+  color: #fff;
+  border-radius: 100%;
+  vertical-align: middle;
+}
+#currentdate{
+  &:hover{
+    cursor: pointer;
+  }
+  &:after{
+    content: '\f107';
+    font-family: FontAwesome;
+    margin-left:10px;
+  }
+}
+#currentdate.toggle-calendar{
+  &:after{
+    content: '\f106' !important;
+    font-family: FontAwesome;
+  }
+}

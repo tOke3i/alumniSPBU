@@ -1,0 +1,86 @@
+.patrons-list{
+  display: flex;
+  flex-wrap: wrap;
+  .patrons-list__item{
+    width:355px;
+    background: #fff;
+    padding:30px 25px 25px;
+    font-size:16px;
+    color: #697171;
+    .patrons-ava-block{
+      padding-bottom:25px;
+    }
+    box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.05);
+    margin-bottom:30px;
+      &:nth-child(odd){
+        margin: 0px 30px 30px 0;
+      }
+    @media(max-width:1200px){
+      width:47%;
+    }
+    @media(max-width:768px){
+      width:90%;
+      margin:30px auto !important;
+    }
+  }
+  .patrons-list-content{
+    padding-top:25px;
+    border-top:1px solid #d5d6d6;
+  }
+  .patrons-name-job-wrap{
+    .patron-name{
+      font-family: "Proxima Nova Extra Bold", Arial, sans-serif;
+      font-size:19px;
+      font-weight:bold;
+      color: #060606;
+      word-break: break-word;
+      word-wrap: break-word;
+    }
+  }
+  .patrons-ava-block{
+    display: flex;
+    align-items:center;
+  }
+    img{
+      margin-right:15px;
+    }
+}
+.bottom-patrons-list{
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  padding:25px;
+  justify-content: space-between;
+}
+  .bottom-patrons-list__item{
+    display: flex;
+    align-items:center;
+    margin-bottom: 40px;
+    max-width:330px;
+    min-width:295px;
+
+    img{
+      margin-right:15px;
+    }
+    .patrons-name-job-wrap{
+      .patron-name{
+        font-family: "Proxima Nova Extra Bold", Arial, sans-serif;
+        font-size:19px;
+        font-weight:bold;
+        color: #060606;
+        word-wrap: break-word;
+      }
+    }
+    .patron-job{
+      font-size:14px;
+      color: #697171;
+    }
+  }
+  .bottom-patrons-list__item:nth-child(n+7){
+    margin-bottom:0 !important;
+  }
+.main-partners{
+  @media(max-width:768px){
+    padding:0 !important;
+  }
+}

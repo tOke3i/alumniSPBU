@@ -1,0 +1,115 @@
+.main-webcast {
+	.wrap-video {
+		overflow: hidden;
+	  margin: 15px 0;
+	  position: relative;
+	  max-height: 400px;
+	  &.no-btmg {
+	  	margin-bottom: 0;
+	  }
+	}
+	.item-title {
+		min-height: 1px;
+	}
+	.subtitle {
+		font-style: normal; 
+		font-size: 16px;
+	}
+	.share-block {
+		border-bottom: none;
+		.back-to-list-link {
+			float: left;
+			margin-top: 8px;
+		}
+	}
+}
+.view-other-video {
+	h2 {
+		margin-bottom: 20px;
+    font-size: 24px;
+    color: $color-black-1;
+    font-family: $font-proxima-semibold;
+	}
+	.item-video {
+		padding: 20px;
+		background-color: $color-white;
+		margin-bottom: 10px;
+		.ytube {
+			min-width: 335px;
+			height: 300px;
+			margin: 0 auto 15px auto;
+		}
+		.wrap-text {
+			width: 100%;
+			.item-title {
+				a {
+					&:hover {
+						color:$color_main_btns;
+					}
+				}
+			}
+			.socials-dates-wrapper {
+				border: none;
+				padding-top: 15px;
+				border-top: 1px solid #ececec;
+				.socials {
+					height: auto;
+				}
+			}
+			.adress-wrap {
+				border: none;
+				padding: 0;
+				margin: 10px 0 0 0;
+			}
+		}
+	}
+}
+.block-text-one {
+	background-color: $color-white;
+	padding: 30px;
+	margin-top: 10px;
+	p {
+			font-size: 16px;
+			color:$color-grey;
+			margin-bottom: 20px;
+			a {
+				color:$color-acua;
+				text-decoration: underline;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+	}
+	.famous-title {
+		font-size: 19px;
+		font-weight: 900;
+	}
+	.famous-graduates__person-wrap {
+		border-bottom: 1px solid $color-grey-4;
+		justify-content: space-between;
+		margin-bottom: 30px;
+		.person {
+			max-width: 300px;
+			width: 100%;
+		}
+	}
+}
+.buffer-top-30 {
+	margin-top: $buffer-bottom-30;
+}
+@media screen and (min-width:768px) {
+	.view-other-video {
+		.item-video {
+			display: flex;
+			.ytube {
+				margin-right: 30px;
+				max-width: 335px;
+				height: 240px;
+			}
+			.wrap-text {
+				margin: auto;
+				max-width: 322px;
+			}
+		}
+	}
+}

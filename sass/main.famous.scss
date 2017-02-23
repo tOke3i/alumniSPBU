@@ -1,0 +1,71 @@
+.famous-graduates{
+  padding:15px;
+  background: #fff;
+    @media(max-width:480px) {
+
+      margin-top:15px;
+    }
+  margin-top:35px;
+}
+.famous-graduates__person-wrap{
+  padding-top:35px;
+}
+.famous-title{
+  font-family: "Proxima Nova Black", Arial, sans-serif;
+  font-size:18px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  border-bottom:2px solid #ececec;
+}
+.famous-graduates__person-wrap{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;  
+}
+.person-name{
+  font-family:"Proxima Nova", Arial, sans-serif;
+  font-weight:900;
+  font-size:20px;
+}
+.person-job{
+  font-size:14px;
+  font-family:"Proxima Nova", Arial, sans-serif;
+  color: #697171;
+
+}
+.person{
+  width:33.333%;
+  margin-bottom:20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+    img{
+      margin-right:25px;
+    }
+    &:hover{
+      color: #ce183e !important;
+    }
+  &:hover .person-job{
+    color: #ce183e !important;
+  }
+  @media(max-width:768px) {
+    img{
+      margin-right:10px;
+      max-width: 80px;
+    }
+  }
+  @media(max-width:480px) {
+
+      width:100% !important;
+  }
+}
+
+.famous-graduates__hole-link{
+  display: flex;
+  justify-content: flex-end;
+    a{
+      font-family:"Proxima Nova", Arial, sans-serif;
+      font-weight:900;
+      font-size:14px;
+    }
+}

@@ -1,0 +1,106 @@
+.partners-banner-wrapper {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  background-repeat: no-repeat;
+
+  img{
+    width:100%;
+  }
+  margin-bottom:35px;
+  @media(max-width:650px){
+    align-items:center;
+    padding-left:0;
+    margin-bottom: 100px !important;
+    min-height: 160px;
+
+  }
+}
+.main-partners{
+  padding:0 35px 35px;
+}
+.partners-banner-title{
+  width: 100%;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  z-index: 1;
+  font-family: "Proxima Nova",Arial, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+  @media(max-width:600px){
+    text-align: center;
+  }
+  @media(max-width:768px){
+    margin: 0px -25px 30px;
+  }
+}
+.partners-cards-list{
+  display: flex;
+  flex-wrap: wrap;
+    .partners-cards-list__item{
+      max-width:355px;
+      padding:30px 25px 25px;
+      background: #fff;
+      box-sizing: border-box;
+      margin-bottom: 35px;
+      box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.05);
+        &:nth-child(odd){
+          margin-right:30px;
+          @media(max-width:650px){
+           margin-right:0;
+          }
+        }
+      .cards-list__item-top{
+        border-bottom:1px solid #e9e9e9;
+        padding-bottom:20px;
+        font-family:"Proxima Nova Black", Arial, Helvetica, sans-serif;
+        font-size:18px;
+        color: #333;
+        display: flex;
+        align-items:center;
+          img{
+            margin-right:25px;
+          }
+      }
+      .cards-list__content{
+        font-size:14px;
+        color: #6b7676;
+        p{
+          margin: 20px 0px;
+          line-height:16px;
+
+        }
+      }
+      .cards-list__contacts{
+        font-size:14px;
+        color: #6b7676;
+        line-height:16px;
+        a{
+          color: #5db1a7;
+        }
+      }
+
+      @media screen and (max-width: 1200px) and (min-width: 980px) {
+        width:45%;
+      }
+
+    }
+  @media(max-width: 980px){
+    justify-content: center;
+  }
+}
+
+.partners-bottom__list{
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  padding:25px;
+  justify-content: space-between;
+  box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.05);
+    .partners-bottom__item{
+      margin:20px 45px 0px 20px;
+    }
+
+}

@@ -1,0 +1,108 @@
+// base
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "reset";
+@import "base";
+
+//GRID
+@import "grid";
+//GRID
+
+//header
+@import "header";
+
+//main content's blocks
+@import "main.topblock";
+@import "main.events";
+@import "main.slider";
+@import "main.news";
+@import "main.famous";
+@import 'main.media';
+//
+//footer
+@import "footer";
+
+
+
+//ABOUT PAGE
+@import 'about/about.banner';
+@import 'about/about.info';
+@import 'about/about.mission';
+//LAYOUT
+
+@import 'layout-and-sidebar/sidebar.slider';
+@import 'layout-and-sidebar/sidebar.banner';
+@import 'layout-and-sidebar/sidenav';
+//DOCUMENTS SCSS
+
+@import 'doc/doc';
+
+//DOCUMENTS SCSS
+@import 'offices/offices';
+
+//CONTACTS
+@import 'contacts/contacts.scss';
+
+//NEWS PAGE
+@import 'news/news';
+@import 'news/news.filter';
+@import 'news/pagenav';
+@import 'news/news.list';
+@import 'news/news.detail';
+@import 'news/news.comment';
+
+//GALLERY PAGE
+@import 'gallery/gallery';
+@import 'gallery/baner';
+
+//JOB PAGE
+@import 'job/job';
+
+//WEBCASTS PAGE
+@import 'webcasts/webcasts';
+
+//404 PAGE
+@import '404/404';
+
+//university_page PAGE
+@import 'university_page/university_page';
+
+//user PAGE
+@import 'user/user';
+
+//modal-box PAGE
+@import 'modal-box/modal-box';
+
+//search-user PAGE
+@import 'search-user/search-user';
+
+//menu 
+@import 'menu/menu';
+
+//end-of-reg PAGE
+@import 'end-of-reg/end-of-reg';
+
+//results-search PAGE 
+@import 'results-search/results-search';
+
+//EVENTS PAGE
+@import 'events/events';
+
+//BUSINESS PAGE
+@import 'business/business';
+
+//EVENTS DETAIL PAGE
+@import 'events-detail/events-detail';
+
+//EVENTS PARTNERS PAGE
+@import 'partners/partners';
+
+//COMMUNITIES PAGE
+@import 'communities/communities';
+
+//PATRONS PAGE
+@import 'patrons/patrons';
+
+//DONATIONS PAGE
+@import 'donations/donations';

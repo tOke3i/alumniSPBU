@@ -1,0 +1,251 @@
+.media{
+  margin-top:35px;
+  padding-bottom:35px;
+  display: flex;
+  justify-content:space-between;
+  @media(max-width: 700px){
+
+    flex-direction:column;
+    .photoalbums-wrap, .webcast-wrap, .media__tags-insta-wrap{
+      max-width:100% !important;
+    }
+  }
+}
+.photoalbums-wrap{
+  max-width: 350px;
+  padding:15px;
+  margin: 0 15px;
+  background: #fff;
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      li:hover a:before{
+        display: block;
+
+      }
+      li{
+        margin:1px;
+      }
+      a{
+        position: relative;
+        display: block;
+        max-height:155px;
+      }
+    }
+     a:before{
+    content: ' ';
+    position: absolute;
+    display: block;
+    width:100%;
+    height:100%;
+    background: rgba(170, 187,187, .8);
+       background-image: url("../img/zoom.png");
+       background-repeat:no-repeat;
+       background-position: center center;
+       display: none;
+  }
+    img{
+      width:100%;
+    }
+  @media(max-width:1100px){
+    img{
+      max-width:130px;
+    }
+  }
+  @media(max-width:1024px){
+    img{
+      max-width:130px;
+    }
+  }
+    @media(max-width:960px){
+      img{
+        max-width:85px !important;
+      }
+    }
+  @media(max-width:768px){
+    img{
+      max-width: 85px !important;
+    }
+  }
+}
+
+.albums-title{
+  font-family: "Proxima Nova", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  //border-bottom: 2px solid #ececec;
+  //margin-bottom:30px;
+}
+
+.webcasts-title{
+  font-family: "Proxima Nova", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ececec;
+  margin-bottom:30px;
+}
+.webcast-wrap{
+  max-width: 350px;
+  padding:15px;
+  background: #fff;
+    .videolist{
+      display: flex;
+      flex-wrap: wrap;
+
+        li{
+          display: flex;
+          flex-wrap: wrap;
+          align-items:center;
+          justify-content: space-between;
+          width:100%;
+        }
+        .video-inf{
+          width:46%;
+        }
+    }
+  li{
+    div.video{
+      display: block;
+      width:140px;
+      height:100px;
+      margin:5px 0px 5px 0;
+
+        @media(max-width: 1040px){
+
+          .video iframe{
+            max-width:100px !important;
+          }
+        }
+    }
+  }
+  li >.socials {
+    font-size:12px;
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+      .fa{
+        margin-right:7px;
+      }
+
+  }
+  li.photoalbums-item {
+    margin: 1px;
+  }
+}
+
+
+.video-name a:hover{
+  color: #d13652;
+}
+.video-name a{
+  font-family:"Proxima Nova", Arial, sans-serif;
+  font-size:14px;
+}
+.media__tags-insta-wrap{
+  max-width: 350px;
+}
+.tags-insta-wrap_tags{
+  width:100%;
+  padding:15px;
+  background: #fff;
+  .tags-title{
+    font-family: "Proxima Nova", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ececec;
+    margin-bottom: 30px;
+  }
+  }
+
+.tags-list{
+    li{
+      display: inline-block;
+      line-height:45px;
+      margin-right:15px;
+    }
+  font-family: "Proxima Nova-Light", Arial, sans-serif;
+  font-size:14px;
+    a{
+      padding:8px;
+      background: #eff7f7;
+        &:hover{
+          background:#d6e1e1;
+        }
+    }
+}
+@media(max-width: 650px){
+  .webcast-wrap li div.video iframe {
+    display: block;
+    width: 240px;
+    height: 170px;
+    margin: 5px 30px 5px 0;
+  }
+  .webcast-wrap li div.video{
+    width: 240px;
+    height: 170px;
+  }
+  .video-name{
+    font-family: "Proxima Nova", Arial, sans-serif;
+    font-weight:bold;
+      a{
+        font-size:24px;
+      }
+  }
+  .video-inf .socials li{
+    font-size:20px;
+    margin-right:25px;
+  }
+  .webcast-wrap .videolist li{
+    margin-bottom:25px;
+  }
+}
+
+@media(max-width: 768px){
+  .person-name{
+    font-size:13px;
+  }
+  .person-job{
+    font-size:10px;
+  }
+  .person img{
+    max-width:60px;
+  }
+}
+@media(max-width: 700px){
+  .photoalbums-wrap, .tags-insta-wrap_tags, .webcast-wrap{
+    margin:0;
+  }
+  .videolist{
+    flex-direction: column;
+  }
+}
+//INSTA
+.insta-title{
+  font-family: "Proxima Nova", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items:center;
+    p{
+      margin-left:10px;
+    };
+}
+.tags-insta-wrap_insta{
+  width:100%;
+  padding:15px;
+  margin: 15px 0px;
+  background: #fff;
+
+}
+.insta-title img{
+  max-width:20px;
+}
+//INSTA ENDS

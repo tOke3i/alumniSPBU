@@ -1,0 +1,56 @@
+//Font awasome starts
+.fa-eye{
+  color: #6d86b5;
+}
+.fa-heart-o{
+  color: #e8607c;
+}
+.fa-comment-o{
+  color: #96d798;
+}
+//Font awasome ends
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i');
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNovaRegular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: 600;
+  src: url("../fonts/ProximaNovaBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: 900;
+  src: url("../fonts/ProximaNovaExtrabold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Proxima Nova Semibold";
+  src: url("../fonts/ProximaNovaSemibold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Proxima Nova Thin";
+  src: url("../fonts/ProximaNovaThin.otf") format("opentype");
+}
+@font-face {
+  font-family: "Proxima Nova-Black";
+  src: url("../fonts/ProximaNovaBlack.otf") format("opentype");
+}
+@font-face {
+  font-family: "Proxima Nova-Light";
+  src: url("../fonts/ProximaNovaLight.otf") format("opentype");
+}
+@font-face {
+  font-family: "Proxima Nova Black";
+  src: url("../fonts/ProximaNovaBlack.otf") format("opentype");
+}
+@font-face {
+  font-family: "Proxima Nova Extra Bold";
+  src: url("../fonts/ProximaNovaExtrabold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  src: url("../fonts/RobotoItalic.ttf") format("opentype");
+}

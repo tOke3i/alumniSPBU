@@ -1,0 +1,48 @@
+.layout-container__sidebar {
+  width: 355px;
+  div:first-child{
+    margin-top:0;
+  }
+    @media(max-width: 980px){
+      display: none;
+    }
+}
+.sidebar_sidenav{
+  width:355px;
+  //height:355px;
+}
+
+.sidenav-list {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-sizing: border-box;
+  .sidenav-list__item {
+    font-family: $font-proxima-nova;
+    border-bottom:1px solid #ececec;
+    box-sizing: border-box;
+    border-left: 3px solid transparent;
+    &:last-child{
+      border-bottom: none;
+    }
+
+    &:hover{
+      border-left-color:$color_strabery;
+    }
+    a{
+      display: block;
+      min-height:100%;
+      font-size: 14px;
+      line-height: 14px;
+      padding: 18px 0px 18px 16px;
+      color: $color-grey-5;
+      &:hover{
+        color: $color_strabery;
+      }
+    }
+  }
+}
+.active-sidenav-menu{
+  border-left-color:$color_strabery !important;
+  color:$color_strabery;
+}

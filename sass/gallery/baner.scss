@@ -1,0 +1,19 @@
+.top-banner-wrapper {
+  position: relative;
+  max-height: 282px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  img {
+    width: 100%;
+  }
+  .banner-title {
+    position: absolute;
+    width: 100%;
+    bottom: 38px;
+    left: 50px;
+    font-family: $font-proxima-nova;
+    font-weight: bold;
+    font-size: 30px;
+    color: $color-white;
+  }
+}
